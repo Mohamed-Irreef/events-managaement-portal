@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+.Navbar{
+    display: flex;
+    width: 100%;
+    box-shadow: 0 0 0 2px rgba(231, 231, 231, 0.233);
+    justify-content: space-between;
+    padding: 20px 40px;
+    padding-right: 80px;
+    align-items: center;
+    background-color: rgba(80, 79, 79, 0.69);
+    position: sticky;
+    top: 0;
+}
+.Nav-list{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+.Nav-list li{
+    font-weight: 500;
+    font-size: 19px;
+    color:white;
+    font-family: "Karla", serif;
+    font-optical-sizing: auto;
+}
+.nav-buttons{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.nav-buttons button {
+    padding: 4px 12px;
+    width: 80px;
+    background-color: rgb(70, 70, 222);
+    color: white;
+    border-radius: 6px;
+    transition: all .3s ease-in;
+}
+.nav-buttons .dashboard{
+    width: 120px;
+}
+.nav-buttons button:hover{
+    background-color: blue;
+}
+.nav-buttons .logout:hover{
+    background-color: red;
+    transition: all .1s ease;
+}
+
+.nav-buttons .events{
+    width: 90px;
+}
+.AddPopup-container{
+    height: 430px;
+    width: 400px;
+    box-shadow: 0 0 5px rgba(22, 22, 22, 0.232);
+    padding: 20px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 100px;
+    animation: popup 0.3s ease-in-out forwards;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.174);
+}
+.AddPopup-container .input-box{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.input-box label{
+    color: white;
+}
+.input-box input {
+    outline: none;
+    color: black;
+  
+}
+
+.input-box input::placeholder{
+    font-weight: 400;
+}
+select{
+    outline: none;
+    font-size: 14px;
+    color: black;
+}
+
+.form-button button{
+    background-color: rgb(75, 75, 247);
+    color: white;
+    border-radius: 4px;
+    transition: .2s;
+    border: transparent;
+}
+.form-button button:hover{
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+}
+.login{
+    animation: login 1s ease-in-out 0.2s infinite forwards;
+}
+@keyframes login{
+    0%{
+        transform: scaleX(0.97);
+        background-color: rgb(72, 72, 215);
+       
+    }
+    25%{
+        background-color: rgb(72, 72, 215);
+    }
+    50%{
+        transform: scaleX(1.1);
+        background-color: rgb(72, 72, 215);
+    }
+    75%{
+        background-color: rgba(246, 184, 68, 0.74);
+    }
+    100%{
+        transform: scaleX(0.97);
+        background-color: rgba(216, 93, 48, 0.625);
+    }
+}
+@keyframes popup{
+    from{
+        transform: translateY(50px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+.datatable{
+    width: 1200px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.actions{
+    
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.actions .edit-btn{
+   width: 70px;
+    padding: 4px 6px;
+    background-color: rgb(41, 41, 254);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+.edit-btn:hover{
+    background-color: blue;
+}
+.actions .delete-btn{
+    width: 70px;
+    border-radius: 4px;
+    padding: 4px 6px;
+    background-color: rgb(248, 55, 55);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.delete-btn:hover{
+    background-color: red;
+}
+
+.filter-input{
+    width: 300px;
+    padding: 5px 10px;
+    outline: none;
+    border: 2px solid rgba(114, 114, 114, 0.56);
+    border-radius: 2px;
+}
+
+.create-event{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.event-form{
+    width: 800px;
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.178);
+    padding: 20px 25px;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+    animation: event-form 0.3s ease-in-out forwards;
+    border-radius: 5px;
+}
+
+@keyframes event-form{
+    from{
+        transform: translateY(50px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
