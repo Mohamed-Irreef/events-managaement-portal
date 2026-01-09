@@ -90,6 +90,7 @@ Super Admins and Staff can publish upcoming events/programs. Students can view f
 
 ## Project Structure
 
+```text
 ├── README.md
 ├── client/
 │   ├── .gitignore
@@ -128,27 +129,29 @@ Super Admins and Staff can publish upcoming events/programs. Students can view f
 │           ├── Students.jsx
 │           └── ViewPost.jsx
 └── server/
-    ├── .env
-    ├── package.json
-    ├── package-lock.json
-    ├── seed.js
-    ├── server.js
-    ├── config/
-    │   └── database.js
-    ├── controllers/
-    │   ├── postController.js
-    │   └── userController.js
-    ├── middlewares/
-    │   ├── checkToken.js
-    │   └── verifyToken.js
-    ├── models/
-    │   ├── eventPostModel.js
-    │   ├── superadminModel.js
-    │   └── userModel.js
-    ├── router/
-    │   ├── postRouter.js
-    │   └── userRouter.js
-    └── uploads/
+	├── .env
+	├── package.json
+	├── package-lock.json
+	├── seed.js
+	├── server.js
+	├── config/
+	│   └── database.js
+	├── controllers/
+	│   ├── postController.js
+	│   └── userController.js
+	├── middlewares/
+	│   ├── checkToken.js
+	│   └── verifyToken.js
+	├── models/
+	│   ├── eventPostModel.js
+	│   ├── superadminModel.js
+	│   └── userModel.js
+	├── router/
+	│   ├── postRouter.js
+	│   └── userRouter.js
+	└── uploads/
+```
+
 
 
 ## Getting Started
