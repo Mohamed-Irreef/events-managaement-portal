@@ -36,6 +36,33 @@ Super Admins and Staff can publish upcoming events/programs. Students can view f
 - Image upload support for posts
 - Edit/delete posts by the author (Staff/Admin or Super Admin)
 
+## UI Screenshots
+
+### Home Page
+![Home Page](client/screenshots/home.png)
+
+### Login Page
+![Login Page](client/screenshots/login.png)
+
+### Super Admin Dashboard
+![Admin Dashboard](client/screenshots/dashboard.png)
+
+### Admins List
+![Admins List](client/screenshots/adminList.png)
+
+### Students List
+![Students List](client/screenshots/studentsList.png)
+
+### Create Post
+![Create Post](client/screenshots/post.png)
+
+### User Profile
+![User Profile](client/screenshots/profile.png)
+
+### Post History
+![Post History](client/screenshots/postHistory.png)
+
+
 ## Tech Stack / Packages
 
 ### Frontend (client)
@@ -63,43 +90,65 @@ Super Admins and Staff can publish upcoming events/programs. Students can view f
 
 ## Project Structure
 
-```text
-event-portal/
-  client/                    # Frontend (React + Vite)
-    public/
-    src/
-      components/
-      pages/
-      App.jsx
-      main.jsx
-      index.css
-    vite.config.js
-    tailwind.config.js
-    postcss.config.js
-    eslint.config.js
-    package.json
-
-  server/                    # Backend (Express + MongoDB)
-    config/
-      database.js            # Mongoose connection
-    controllers/
-      userController.js
-      postController.js
-    middlewares/
-      verifyToken.js
-      checkToken.js
-    models/
-      userModel.js
-      superadminModel.js
-      eventPostModel.js
-    router/
-      userRouter.js          # /api/auth
-      postRouter.js          # /api/posts
-    uploads/                 # Uploaded images (served statically)
-    seed.js                  # Seeder for Super Admin accounts
-    server.js                # Express app entry
-    package.json
-```
+├── README.md
+├── client/
+│ ├── .gitignore
+│ ├── eslint.config.js
+│ ├── index.html
+│ ├── package-lock.json
+│ ├── package.json
+│ ├── postcss.config.js
+│ ├── README.md
+│ ├── tailwind.config.js
+│ ├── vite.config.js
+│ ├── public/
+│ └── src/
+│ ├── App.css
+│ ├── App.jsx
+│ ├── index.css
+│ ├── main.jsx
+│ ├── components/
+│ │ ├── AddUsers.jsx
+│ │ ├── components.css
+│ │ ├── CreateEvent.jsx
+│ │ ├── EditAdminsHandler.jsx
+│ │ ├── EditEvent.jsx
+│ │ ├── EditStudentsHandler.jsx
+│ │ ├── Footer.jsx
+│ │ ├── Login.jsx
+│ │ └── Navbar.jsx
+│ └── pages/
+│ ├── About.jsx
+│ ├── Admins.jsx
+│ ├── Dashboard.jsx
+│ ├── Events.jsx
+│ ├── Help.jsx
+│ ├── Home.jsx
+│ ├── Profile.jsx
+│ ├── Students.jsx
+│ └── ViewPost.jsx
+└── server/
+├── .env
+├── package-lock.json
+├── package.json
+├── seed.js
+├── server.js
+├── config/
+│ └── database.js
+├── controllers/
+│ ├── postController.js
+│ └── userController.js
+├── middlewares/
+│ ├── checkToken.js
+│ └── verifyToken.js
+├── models/
+│ ├── eventPostModel.js
+│ ├── superadminModel.js
+│ └── userModel.js
+├── router/
+│ ├── postRouter.js
+│ └── userRouter.js
+└── uploads/
 
 ## Getting Started
 
