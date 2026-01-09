@@ -92,63 +92,64 @@ Super Admins and Staff can publish upcoming events/programs. Students can view f
 
 ├── README.md
 ├── client/
-│ ├── .gitignore
-│ ├── eslint.config.js
-│ ├── index.html
-│ ├── package-lock.json
-│ ├── package.json
-│ ├── postcss.config.js
-│ ├── README.md
-│ ├── tailwind.config.js
-│ ├── vite.config.js
-│ ├── public/
-│ └── src/
-│ ├── App.css
-│ ├── App.jsx
-│ ├── index.css
-│ ├── main.jsx
-│ ├── components/
-│ │ ├── AddUsers.jsx
-│ │ ├── components.css
-│ │ ├── CreateEvent.jsx
-│ │ ├── EditAdminsHandler.jsx
-│ │ ├── EditEvent.jsx
-│ │ ├── EditStudentsHandler.jsx
-│ │ ├── Footer.jsx
-│ │ ├── Login.jsx
-│ │ └── Navbar.jsx
-│ └── pages/
-│ ├── About.jsx
-│ ├── Admins.jsx
-│ ├── Dashboard.jsx
-│ ├── Events.jsx
-│ ├── Help.jsx
-│ ├── Home.jsx
-│ ├── Profile.jsx
-│ ├── Students.jsx
-│ └── ViewPost.jsx
+│   ├── .gitignore
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── postcss.config.js
+│   ├── tailwind.config.js
+│   ├── vite.config.js
+│   ├── README.md
+│   ├── public/
+│   └── src/
+│       ├── App.css
+│       ├── App.jsx
+│       ├── index.css
+│       ├── main.jsx
+│       ├── components/
+│       │   ├── AddUsers.jsx
+│       │   ├── components.css
+│       │   ├── CreateEvent.jsx
+│       │   ├── EditAdminsHandler.jsx
+│       │   ├── EditEvent.jsx
+│       │   ├── EditStudentsHandler.jsx
+│       │   ├── Footer.jsx
+│       │   ├── Login.jsx
+│       │   └── Navbar.jsx
+│       └── pages/
+│           ├── About.jsx
+│           ├── Admins.jsx
+│           ├── Dashboard.jsx
+│           ├── Events.jsx
+│           ├── Help.jsx
+│           ├── Home.jsx
+│           ├── Profile.jsx
+│           ├── Students.jsx
+│           └── ViewPost.jsx
 └── server/
-├── .env
-├── package-lock.json
-├── package.json
-├── seed.js
-├── server.js
-├── config/
-│ └── database.js
-├── controllers/
-│ ├── postController.js
-│ └── userController.js
-├── middlewares/
-│ ├── checkToken.js
-│ └── verifyToken.js
-├── models/
-│ ├── eventPostModel.js
-│ ├── superadminModel.js
-│ └── userModel.js
-├── router/
-│ ├── postRouter.js
-│ └── userRouter.js
-└── uploads/
+    ├── .env
+    ├── package.json
+    ├── package-lock.json
+    ├── seed.js
+    ├── server.js
+    ├── config/
+    │   └── database.js
+    ├── controllers/
+    │   ├── postController.js
+    │   └── userController.js
+    ├── middlewares/
+    │   ├── checkToken.js
+    │   └── verifyToken.js
+    ├── models/
+    │   ├── eventPostModel.js
+    │   ├── superadminModel.js
+    │   └── userModel.js
+    ├── router/
+    │   ├── postRouter.js
+    │   └── userRouter.js
+    └── uploads/
+
 
 ## Getting Started
 
